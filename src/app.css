@@ -1,0 +1,202 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+label>* {
+  display: block;
+  margin-left: 2rem;
+  padding: .4rem;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.notes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+
+.notes > div {
+  width: 115px;
+  height: 115px;
+}
+
+/* 4-HOLE FINGERING SPRITES */
+.pos-5dot,
+.note-cdot {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -5px -32px;
+}
+
+.pos-5sharpdot,
+.note-csharpdot {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -131px -31px;
+}
+
+.pos-6dot,
+.note-ddot {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -261px -32px;
+}
+
+.pos-6dotsharp,
+.note-dsharpdot {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -389px -32px;
+}
+
+.pos-7dot,
+.note-edot {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -518px -32px;
+}
+
+.pos-1,
+.note-f {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -645px -32px;
+}
+
+.pos-1sharp,
+.note-fsharp {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -5px -177px;
+}
+
+.pos-2,
+.note-g {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -130px -176px;
+}
+
+.pos-2sharp,
+.note-gsharp {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -261px -176px;
+}
+
+.pos-3,
+.note-a {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -390px -176px;
+}
+
+.pos-4,
+.note-asharp {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -518px -176px;
+}
+
+.pos-4sharp,
+.note-b {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -644px -176px;
+}
+
+.pos-5,
+.note-c {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -5px -320px;
+}
+
+.pos-5sharp,
+.note-csharp {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -132px -320px;
+}
+
+.pos-6,
+.note-d {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -261px -321px;
+}
+
+.pos-6sharp,
+.note-dsharp {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -388px -320px;
+}
+
+.pos-7,
+.note-e {
+  background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -518px -321px;
+}
