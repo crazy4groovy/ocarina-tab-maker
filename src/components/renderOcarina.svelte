@@ -9,9 +9,11 @@
     $: console.log("!@", groups);
 </script>
 
-{#each groups as groupNotes}
+<h2>{notes.join(",")})</h2>
+
+{#each groups as notes}
     <div class="notes">
-        {#each groupNotes as note}
+        {#each notes as note}
             <div class={`note-${note}`} alt={`note-${note}`} />
         {/each}
     </div>
