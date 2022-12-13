@@ -9,7 +9,7 @@
     $: console.log("!@", groups);
 </script>
 
-<h2>{notes.join(",")})</h2>
+<h2>{notes.join(",")}</h2>
 
 {#each groups as notes}
     <div class="notes">
