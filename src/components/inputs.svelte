@@ -8,8 +8,8 @@
     }
 
     function onType(e: any) {
-        notes = e.target.value.toLowerCase().split('');
-        console.log(notes)
+        notes = e.target.value.toLowerCase().split("");
+        console.log(notes);
     }
 </script>
 
@@ -23,5 +23,11 @@
 <br /> -->
 <label for="quick-text">
     Quick text:
-    <textarea name="quick-text" id="quick-text" rows="2" on:keyup={onType} value={notes.join('')} />
+    <textarea
+        name="quick-text"
+        id="quick-text"
+        rows="2"
+        on:keyup={onType}
+        value={notes.join("")}
+    />
 </label>
