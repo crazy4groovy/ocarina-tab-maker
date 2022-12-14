@@ -5,7 +5,15 @@
     $: groups = notes
         .join("")
         .split("\n")
-        .map((l) => l.split(""));
+        .map((l) => {
+          const notes = l.split("")
+          return notes.map(n => {
+            if (n === n.toUpperCase()) {
+                return `${n.toLowerCase()}sharp`
+            }
+            return n
+          })
+        });
     $: console.log("!@", groups);
 </script>
 

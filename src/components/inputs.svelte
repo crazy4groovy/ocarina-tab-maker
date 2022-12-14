@@ -8,7 +8,8 @@
     }
 
     function onType(e: any) {
-        notes = e.target.value.toLowerCase().split("");
+        notes = e.target.value.split("");
+        notes = notes.replace(/[^a-g\n ]+/gim, '')
         // console.log(notes);
     }
 </script>
