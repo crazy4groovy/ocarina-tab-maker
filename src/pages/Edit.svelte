@@ -7,10 +7,10 @@
   export let params = { notes: "" };
   
   let notes = params?.notes?.replace(/\*/g, "\n").split("") || [];
-  let style = "";
+  // let style = "";
   
   $: push(`#/${notes.join('').replace(/\n/g, "*")}`)
 </script>
 
-<Inputs bind:notes bind:style />
+<Inputs bind:notes />
 <RenderOcarina {notes} />

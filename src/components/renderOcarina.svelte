@@ -1,18 +1,27 @@
 <script lang="ts">
+    import { notesToClasses } from "../utils/notesToClasses";
+
     export let notes: string[] = [];
-    let groups: any[] = [];
-    $: console.log("!", notes.join(""));
-    $: groups = notes
+    let classGroups: any[] = [];
+
+    $: console.log("!notes", notes.join(""));
+
+    $: classGroups = notes
         .join("")
         .split("\n")
-        .map((l) => l.split(""));
-    $: console.log("!@", groups);
+        .map((l) => notesToClasses(l.split("")));
+
+    $: console.log("!groups", classGroups);
 </script>
 
-{#each groups as groupNotes}
+{#if notes.length > 0}
+    <h1>Tab Music</h1>
+{/if}
+
+{#each classGroups as classes}
     <div class="notes">
-        {#each groupNotes as note}
-            <div class={`note-${note}`} alt={`note-${note}`} />
+        {#each classes as klass}
+            <div class={`note-${klass}`} title={`${klass}`} />
         {/each}
     </div>
 {/each}

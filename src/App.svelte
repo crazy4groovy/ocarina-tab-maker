@@ -3,7 +3,7 @@
   
     import routes from './routes';
     import Layout from './Layout.svelte';
-  </script>./routes
+  </script>
   
   <!-- <link
     rel="stylesheet"

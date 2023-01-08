@@ -38,6 +38,14 @@ h1 {
   line-height: 1.1;
 }
 
+code {
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: #444;
+  color: #eee;
+}
+
 .card {
   padding: 2em;
 }
@@ -115,7 +123,7 @@ label>* {
   height: 115px;
 }
 
-/* 4-HOLE FINGERING SPRITES */
+/* 6-HOLE FINGERING SPRITES */
 .pos-5dot,
 .note-cdot {
   background: url('imgs/fingerings/6hole-fingering.jpg') no-repeat -5px -32px;
