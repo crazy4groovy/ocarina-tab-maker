@@ -2,6 +2,11 @@
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
 
+## Resources
+
+- 12-hole font: https://panzi.github.io/ocarina_tabs/
+- 4-hole font:  https://www.fontspace.com/four-hole-ocarina-font-f19552
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
