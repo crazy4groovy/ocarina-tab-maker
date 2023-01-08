@@ -54,4 +54,7 @@
         font-style: italic;
         margin: 1rem;
     }
+    textarea {
+        max-width: 100%;
+    }
 </style>

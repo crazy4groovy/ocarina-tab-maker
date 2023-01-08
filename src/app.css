@@ -113,22 +113,6 @@ label>* {
   }
 }
 
-.notes {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 50vw;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  padding-bottom: 2rem;
-}
-
-.notes > div {
-  width: 115px;
-  height: 115px;
-}
-
 /* 6-HOLE FINGERING SPRITES */
 .pos-5dot,
 .note-cdot {
